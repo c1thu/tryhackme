@@ -1,2 +1,2 @@
 # tryhackme
-Just a note for tryhackme rooms
+Just a note repo for tryhackme rooms
